@@ -7,19 +7,30 @@ const ServicesPage = () => {
       title: "Dermal Fillers",
       description:
         "Enhance your facial features and restore volume with our range of dermal fillers.",
-      image: "/path-to-image.jpg",
+      image: "/images/service-placeholder.jpg",
     },
     {
       title: "Botox Injections",
       description:
         "Reduce wrinkles and fine lines with our professional Botox injection services.",
-      image: "/path-to-image.jpg",
+      image: "/images/service-placeholder.jpg",
     },
     {
       title: "Lip Enhancement",
       description:
         "Achieve fuller, more defined lips with our lip enhancement treatments.",
-      image: "/path-to-image.jpg",
+      image: "/images/service-placeholder.jpg",
+    },
+    {
+      title: "Chemical Peels",
+      description: "Revitalize your skin with our chemical peel treatments.",
+      image: "/images/service-placeholder.jpg",
+    },
+    {
+      title: "Microneedling",
+      description:
+        "Stimulate collagen production with our microneedling services.",
+      image: "/images/service-placeholder.jpg",
     },
     // Add more services as needed
   ];
@@ -31,7 +42,7 @@ const ServicesPage = () => {
         {services.map((service, index) => (
           <Col key={index} md={4} className="mb-4">
             <Card>
-              <Card.Img variant="top" src={service.image} />
+              <Card.Img variant="top" src={service.image} alt={service.title} />
               <Card.Body>
                 <Card.Title>{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
